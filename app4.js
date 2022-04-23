@@ -26,9 +26,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Express handlebars - Hompage router
-app.get("/", (req, res) => {
-  res.render("index");
-});
+// app.get("/", (req, res) => {
+//   res.render("index");
+// });
 
 // to send a static folder
 app.use(express.static(path.join(__dirname, "public")));
